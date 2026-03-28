@@ -25,6 +25,37 @@ Side-by-side comparison of React, Vue, and Svelte using identical apps. Not synt
 | **Terminal** | xterm.js | xterm.js | xterm.js |
 | **Styling** | Tailwind v4 | Tailwind v4 | Tailwind v4 |
 
+## Benchmark Results
+
+Measured with Playwright headless Chromium. Median of 3 runs. All three apps render the same UI with the same data.
+
+### Rendering Performance (ms, lower is better)
+
+| Benchmark | React | Vue | Svelte |
+|---|--:|--:|--:|
+| Create 10,000 rows | 831.5 | **272.6** | 468.4 |
+| Update every 10th row | 254.3 | 51.5 | **33.0** |
+| Swap rows | 198.7 | 47.5 | **45.6** |
+| Select row | 256.0 | 28.4 | **15.4** |
+| Append 1,000 rows | 210.5 | **69.8** | 97.2 |
+| Clear all | 46.6 | 31.6 | **29.1** |
+
+### Bundle Size (JS gzipped)
+
+| App | React | Vue | Svelte |
+|---|--:|--:|--:|
+| Perf Stress Test | 62.4 KB | 28.1 KB | **18.0 KB** |
+| Terminal Streamer | 135.3 KB | 99.6 KB | **87.4 KB** |
+
+### What the numbers say
+
+- **Svelte is fastest for targeted updates** — selecting a row takes 15ms vs React's 256ms. No virtual DOM diffing means surgical DOM updates.
+- **Vue wins initial bulk render** — 10k rows in 273ms, beating both Svelte (468ms) and React (832ms). Its template compiler + proxy reactivity handles mass creation well.
+- **React has the most overhead** — 3-16x slower than Vue/Svelte on partial updates. The VDOM diffing cost scales with list size.
+- **Svelte ships the least code** — 18KB gzipped vs React's 62KB for the same app. 3.5x smaller.
+
+> Numbers will vary by machine. Run `pnpm dev:all` and test yourself.
+
 ## Quick Start
 
 ```bash
