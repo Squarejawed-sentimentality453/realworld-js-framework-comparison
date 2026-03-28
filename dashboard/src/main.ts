@@ -59,10 +59,31 @@ const frameworkIcons: Record<string, { svg: string; svgLarge: string; color: str
   },
 }
 
-const typeLabels: Record<string, { label: string; icon: string }> = {
-  perf: { label: 'Performance Stress Test', icon: '⚡' },
-  crud: { label: 'CRUD Task Manager', icon: '📋' },
-  xterm: { label: 'Terminal Streamer', icon: '🖥' },
+const typeLabels: Record<string, { label: string; icon: string; subtitle: string; accent: string; cardBorder: string; cardBg: string }> = {
+  perf: {
+    label: 'Performance Stress Test',
+    icon: '⚡',
+    subtitle: '10k rows, deep trees, rapid state updates — raw framework speed',
+    accent: 'border-amber-500/60',
+    cardBorder: 'border-l-amber-500/40 hover:border-l-amber-400',
+    cardBg: 'bg-amber-950/10 hover:bg-amber-950/20',
+  },
+  crud: {
+    label: 'CRUD Task Manager',
+    icon: '📋',
+    subtitle: 'Routing, state, forms, validation — real-world app with ecosystem packages',
+    accent: 'border-violet-500/60',
+    cardBorder: 'border-l-violet-500/40 hover:border-l-violet-400',
+    cardBg: 'bg-violet-950/10 hover:bg-violet-950/20',
+  },
+  xterm: {
+    label: 'Terminal Streamer',
+    icon: '🖥',
+    subtitle: 'Live shell over WebSocket — high-frequency DOM updates and streaming',
+    accent: 'border-emerald-500/60',
+    cardBorder: 'border-l-emerald-500/40 hover:border-l-emerald-400',
+    cardBg: 'bg-emerald-950/10 hover:bg-emerald-950/20',
+  },
 }
 
 async function checkHealth(port: number): Promise<boolean> {
@@ -128,26 +149,21 @@ function render() {
         <!-- App Groups -->
         ${types.map((type) => {
           const typeApps = apps.filter((a) => a.type === type)
-          const { label, icon } = typeLabels[type]
+          const t = typeLabels[type]
           return `
             <div class="mb-10">
-              <div class="flex items-center justify-between mb-4">
-                <h2 class="text-sm font-semibold text-gray-500 uppercase tracking-wider">
-                  ${icon} ${label}
+              <div class="border-b ${t.accent} pb-3 mb-5">
+                <h2 class="text-lg font-semibold text-white">
+                  ${t.icon} ${t.label}
                 </h2>
-                <div class="flex items-center gap-3 text-xs text-gray-600">
-                  <span class="flex items-center gap-1">${frameworkIcons.react.svg} Blue</span>
-                  <span class="flex items-center gap-1">${frameworkIcons.vue.svg} Green</span>
-                  <span class="flex items-center gap-1">${frameworkIcons.svelte.svg} Orange</span>
-                  <span class="flex items-center gap-1">${frameworkIcons.solid.svg} Blue</span>
-                </div>
+                <p class="text-sm text-gray-500 mt-1">${t.subtitle}</p>
               </div>
               <div class="grid grid-cols-4 gap-4">
                 ${typeApps.map((app) => {
                   const fw = frameworkIcons[app.framework]
                   return `
                     <a href="http://localhost:${app.port}" target="_blank"
-                       class="group block bg-gray-900 border border-gray-800 rounded-xl p-5 hover:border-gray-600 hover:bg-gray-900/80 transition-all">
+                       class="group block border-l-2 ${t.cardBorder} ${t.cardBg} border border-gray-800 rounded-lg p-5 hover:border-gray-700 transition-all">
                       <div class="flex items-center justify-between mb-3">
                         <div class="flex items-center gap-2.5">
                           ${statusDot(`app-${app.port}`)}
@@ -158,10 +174,7 @@ function render() {
                         </div>
                         <span class="text-xs text-gray-600 font-mono">:${app.port}</span>
                       </div>
-                      <h3 class="text-lg font-semibold text-white mb-1 group-hover:text-blue-400 transition-colors">
-                        ${app.name}
-                      </h3>
-                      <p class="text-sm text-gray-500">${app.description}</p>
+                      <p class="text-sm text-gray-400">${app.description}</p>
                       <div class="mt-3 text-xs text-gray-600 group-hover:text-gray-400 transition-colors">
                         Open in new tab →
                       </div>
