@@ -21,6 +21,7 @@
     "bench": "pnpm --filter @comparison/bench start",
     "e2e": "pnpm --filter @comparison/e2e test",
     "e2e:ui": "pnpm --filter @comparison/e2e test:ui",
+    "add-framework": "tsx scripts/add-framework.ts",
     "prepare": "husky"
   },
   "lint-staged": {
