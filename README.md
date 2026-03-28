@@ -8,11 +8,20 @@ Side-by-side comparison of React, Vue, Svelte, and Solid using identical apps. N
 
 ### 3 App Types × 4 Frameworks = 12 Apps
 
-| App | What it does | What it tests |
-|-----|-------------|---------------|
-| **Performance Stress Test** | 10k row table, deep component tree, rapid state updates | Raw rendering speed, reactivity, memory usage |
-| **CRUD Task Manager** | Full task manager with filters, search, pagination, forms | Real-world DX, ecosystem packages, code volume |
-| **Terminal Streamer** | Web terminal connected to a real shell via WebSocket | High-frequency DOM updates, streaming data, lifecycle management |
+#### Performance Stress Test
+10k row table, deep component tree, rapid state updates — measures raw rendering speed and reactivity.
+
+![Performance Stress Test](.github/perf-stress.png)
+
+#### CRUD Task Manager
+Full task manager with filters, search, pagination, forms — measures real-world DX and ecosystem maturity.
+
+![CRUD Task Manager](.github/crud.png)
+
+#### Terminal Streamer
+Web terminal connected to a real shell via WebSocket — measures high-frequency DOM updates and lifecycle management.
+
+![Terminal Streamer](.github/terminal.png)
 
 ### Ecosystem Used
 
