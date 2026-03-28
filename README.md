@@ -2,6 +2,8 @@
 
 Side-by-side comparison of React, Vue, and Svelte using identical apps. Not synthetic benchmarks or hello worlds — actual apps you'd build at work.
 
+![Dashboard](.github/dashboard.png)
+
 ## What's Inside
 
 ### 3 App Types × 3 Frameworks = 9 Apps
