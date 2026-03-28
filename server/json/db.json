@@ -41,16 +41,6 @@
       "updatedAt": "2026-03-15T20:00:00.000Z"
     },
     {
-      "id": "5",
-      "title": "Review pull requests",
-      "description": "Go through the 3 pending PRs on the main repo and leave feedback.",
-      "status": "in-progress",
-      "priority": "high",
-      "categoryId": 1,
-      "createdAt": "2026-03-27T09:30:00.000Z",
-      "updatedAt": "2026-03-27T11:00:00.000Z"
-    },
-    {
       "id": "6",
       "title": "Morning jog routine",
       "description": "Run 5km in the park before work. Track pace and heart rate.",
@@ -381,16 +371,6 @@
       "updatedAt": "2026-03-21T09:00:00.000Z"
     },
     {
-      "id": "39",
-      "title": "Stretch and foam roll session",
-      "description": "Do a 20-minute recovery routine focusing on hamstrings and lower back.",
-      "status": "pending",
-      "priority": "low",
-      "categoryId": 4,
-      "createdAt": "2026-03-27T17:00:00.000Z",
-      "updatedAt": "2026-03-28T03:17:08.428Z"
-    },
-    {
       "id": "40",
       "title": "Study PostgreSQL window functions",
       "description": "Work through exercises on ROW_NUMBER, RANK, and LAG/LEAD functions.",
@@ -479,16 +459,6 @@
       "categoryId": 2,
       "createdAt": "2026-03-22T16:00:00.000Z",
       "updatedAt": "2026-03-22T16:00:00.000Z"
-    },
-    {
-      "id": "49",
-      "title": "Order replacement water filter",
-      "description": "The fridge water filter indicator is red. Order the compatible replacement.",
-      "status": "pending",
-      "priority": "low",
-      "categoryId": 3,
-      "createdAt": "2026-03-26T14:00:00.000Z",
-      "updatedAt": "2026-03-26T14:00:00.000Z"
     },
     {
       "id": "50",

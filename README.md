@@ -42,28 +42,29 @@ Measured with Playwright headless Chromium. Median of 3 runs. All six apps rende
 
 | Benchmark | React | Vue | Svelte | Solid | Preact | Lit |
 |---|--:|--:|--:|--:|--:|--:|
-| Create 10,000 rows | 820.1 | 265.1 | 467.3 | **223.8** | 673.5 | 356.2 |
-| Update every 10th row | 251.3 | 50.0 | **35.9** | 52.9 | 145.2 | 42.8 |
-| Swap rows | 190.8 | 44.8 | 42.6 | **26.1** | 120.3 | 38.5 |
-| Select row | 248.3 | 28.4 | **15.0** | 216.3 | 152.7 | 22.1 |
-| Append 1,000 rows | 207.6 | 68.6 | 94.4 | **44.1** | 135.8 | 72.4 |
-| Clear all | 63.3 | 31.2 | 28.1 | **24.1** | 42.5 | 26.8 |
+| Create 10,000 rows | 828.8 | 270.4 | 472.1 | **235.3** | 301.0 | 278.9 |
+| Update every 10th row | 258.3 | 49.5 | **35.4** | 53.7 | 78.9 | 45.4 |
+| Swap rows | 194.7 | 47.7 | 45.7 | **27.9** | 80.6 | 33.9 |
+| Select row | 250.6 | 29.0 | **15.6** | 222.9 | 55.1 | 18.1 |
+| Append 1,000 rows | 211.6 | 69.3 | 97.8 | **47.2** | 102.9 | 74.7 |
+| Clear all | 59.0 | 31.1 | 28.2 | **24.8** | 29.5 | 37.6 |
 
 ### Bundle Size (JS gzipped)
 
 | App | React | Vue | Svelte | Solid | Preact | Lit |
 |---|--:|--:|--:|--:|--:|--:|
-| Perf Stress Test | 62.4 KB | 28.1 KB | 18.0 KB | 8.1 KB | 9.2 KB | **7.8 KB** |
-| Terminal Streamer | 135.3 KB | 99.6 KB | 87.4 KB | 79.1 KB | 82.3 KB | **76.9 KB** |
+| Perf Stress Test | 62.4 KB | 28.1 KB | 18.1 KB | **8.1 KB** | 8.8 KB | 10.0 KB |
+| Terminal Streamer | 135.3 KB | 99.6 KB | 87.4 KB | **79.1 KB** | 81.5 KB | 82.5 KB |
 
 ### What the numbers say
 
-- **Solid is fastest for bulk operations** — creating 10k rows (224ms), appending 1k (44ms), and clearing (24ms) are all best-in-class.
-- **Svelte wins targeted single-element updates** — selecting one row in 15ms. Compiled reactivity tracks exactly which DOM nodes to touch.
-- **Lit is the dark horse** — near-Svelte performance on partial updates (swap 38ms, select 22ms) with the smallest bundles (7.8KB). Web Components have minimal framework overhead.
-- **Preact is React but faster** — 20-40% faster across the board with a 6.8x smaller bundle. Same API, less cost.
-- **Vue is the all-rounder** — competitive everywhere, never the slowest. Template compiler + proxy reactivity is well-optimized.
-- **React has the most overhead** — consistently 3-10x slower than the others on partial updates. The VDOM diffing cost scales with list size.
+- **Solid is fastest for bulk operations** — creating 10k rows (235ms), appending 1k (47ms), swapping (28ms), and clearing (25ms) are all best-in-class. Fine-grained reactivity without VDOM overhead.
+- **Svelte wins targeted single-element updates** — selecting one row in 16ms vs React's 251ms. Compiled reactivity tracks exactly which DOM nodes to touch.
+- **Lit punches above its weight** — near-Svelte on partial updates (swap 34ms, select 18ms) using plain Web Components. No framework runtime, just the platform.
+- **Preact is a lighter React** — 3-4x faster than React on most benchmarks with a 7x smaller bundle (8.8 KB vs 62.4 KB). Same API, fraction of the cost.
+- **Vue is the all-rounder** — competitive across every benchmark, never the slowest. Template compiler + proxy reactivity is well-optimized.
+- **React has the most overhead** — consistently 3-10x slower than the others on partial updates. The VDOM diffing cost is visible at scale.
+- **Solid has the smallest bundle** — 8.1 KB gzipped. Preact is close at 8.8 KB. Both are 7x smaller than React.
 
 > Numbers will vary by machine. Run `pnpm dev:all` and test yourself.
 
