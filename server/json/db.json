@@ -1,7 +1,7 @@
 {
   "tasks": [
     {
-      "id": 1,
+      "id": "1",
       "title": "Prepare quarterly report",
       "description": "Compile Q1 2026 financial data and create presentation slides for the board meeting.",
       "status": "done",
@@ -11,7 +11,7 @@
       "updatedAt": "2026-03-01T14:30:00.000Z"
     },
     {
-      "id": 2,
+      "id": "2",
       "title": "Buy groceries",
       "description": "Pick up vegetables, fruits, milk, and bread from the farmers market.",
       "status": "pending",
@@ -21,7 +21,7 @@
       "updatedAt": "2026-03-25T08:00:00.000Z"
     },
     {
-      "id": 3,
+      "id": "3",
       "title": "Schedule dentist appointment",
       "description": "Book a routine cleaning and checkup for next month.",
       "status": "pending",
@@ -31,7 +31,7 @@
       "updatedAt": "2026-03-20T10:15:00.000Z"
     },
     {
-      "id": 4,
+      "id": "4",
       "title": "Complete TypeScript course module 5",
       "description": "Finish the advanced generics and utility types section of the online course.",
       "status": "in-progress",
@@ -41,7 +41,7 @@
       "updatedAt": "2026-03-15T20:00:00.000Z"
     },
     {
-      "id": 5,
+      "id": "5",
       "title": "Review pull requests",
       "description": "Go through the 3 pending PRs on the main repo and leave feedback.",
       "status": "in-progress",
@@ -51,7 +51,7 @@
       "updatedAt": "2026-03-27T11:00:00.000Z"
     },
     {
-      "id": 6,
+      "id": "6",
       "title": "Morning jog routine",
       "description": "Run 5km in the park before work. Track pace and heart rate.",
       "status": "done",
@@ -61,7 +61,7 @@
       "updatedAt": "2026-02-28T07:15:00.000Z"
     },
     {
-      "id": 7,
+      "id": "7",
       "title": "Order new standing desk",
       "description": "Research ergonomic standing desks and place an order for the home office.",
       "status": "done",
@@ -71,7 +71,7 @@
       "updatedAt": "2026-03-03T09:00:00.000Z"
     },
     {
-      "id": 8,
+      "id": "8",
       "title": "Write blog post on React Server Components",
       "description": "Draft a technical article explaining RSC patterns with practical examples.",
       "status": "in-progress",
@@ -81,7 +81,7 @@
       "updatedAt": "2026-03-22T16:30:00.000Z"
     },
     {
-      "id": 9,
+      "id": "9",
       "title": "Fix authentication bug",
       "description": "Investigate and resolve the session timeout issue reported by QA team.",
       "status": "done",
@@ -91,7 +91,7 @@
       "updatedAt": "2026-03-06T17:20:00.000Z"
     },
     {
-      "id": 10,
+      "id": "10",
       "title": "Plan weekend hiking trip",
       "description": "Research trails, check weather forecast, and pack gear for Saturday hike.",
       "status": "pending",
@@ -101,7 +101,7 @@
       "updatedAt": "2026-03-24T19:00:00.000Z"
     },
     {
-      "id": 11,
+      "id": "11",
       "title": "Update project dependencies",
       "description": "Run npm audit and update all outdated packages in the monorepo.",
       "status": "pending",
@@ -111,7 +111,7 @@
       "updatedAt": "2026-03-26T10:00:00.000Z"
     },
     {
-      "id": 12,
+      "id": "12",
       "title": "Meal prep for the week",
       "description": "Cook chicken, rice, and roasted vegetables for weekday lunches.",
       "status": "pending",
@@ -121,7 +121,7 @@
       "updatedAt": "2026-03-23T08:00:00.000Z"
     },
     {
-      "id": 13,
+      "id": "13",
       "title": "Read 'Designing Data-Intensive Applications'",
       "description": "Finish chapters 7-9 on transactions and distributed systems consistency.",
       "status": "in-progress",
@@ -131,7 +131,7 @@
       "updatedAt": "2026-03-18T21:00:00.000Z"
     },
     {
-      "id": 14,
+      "id": "14",
       "title": "Renew gym membership",
       "description": "Annual membership expires next week. Compare plans and renew online.",
       "status": "pending",
@@ -141,7 +141,7 @@
       "updatedAt": "2026-03-22T11:00:00.000Z"
     },
     {
-      "id": 15,
+      "id": "15",
       "title": "Buy birthday gift for Sarah",
       "description": "Find a thoughtful gift. She mentioned wanting a new cookbook or art supplies.",
       "status": "pending",
@@ -151,7 +151,7 @@
       "updatedAt": "2026-03-21T15:00:00.000Z"
     },
     {
-      "id": 16,
+      "id": "16",
       "title": "Deploy staging environment",
       "description": "Set up the new staging server and deploy the latest release candidate.",
       "status": "done",
@@ -161,7 +161,7 @@
       "updatedAt": "2026-03-09T14:00:00.000Z"
     },
     {
-      "id": 17,
+      "id": "17",
       "title": "Organize digital photos",
       "description": "Sort vacation photos into albums and back up to cloud storage.",
       "status": "pending",
@@ -171,7 +171,7 @@
       "updatedAt": "2026-03-15T19:30:00.000Z"
     },
     {
-      "id": 18,
+      "id": "18",
       "title": "Complete Rust exercises on Exercism",
       "description": "Work through the ownership and borrowing track exercises.",
       "status": "in-progress",
@@ -181,7 +181,7 @@
       "updatedAt": "2026-03-20T18:45:00.000Z"
     },
     {
-      "id": 19,
+      "id": "19",
       "title": "Schedule annual physical exam",
       "description": "Book appointment with Dr. Chen for the yearly health screening.",
       "status": "done",
@@ -191,7 +191,7 @@
       "updatedAt": "2026-03-02T09:30:00.000Z"
     },
     {
-      "id": 20,
+      "id": "20",
       "title": "Replace kitchen faucet",
       "description": "The kitchen faucet is leaking. Buy a replacement and install it this weekend.",
       "status": "pending",
@@ -201,7 +201,7 @@
       "updatedAt": "2026-03-19T08:30:00.000Z"
     },
     {
-      "id": 21,
+      "id": "21",
       "title": "Write API documentation",
       "description": "Document all REST endpoints with request/response examples using OpenAPI spec.",
       "status": "in-progress",
@@ -211,7 +211,7 @@
       "updatedAt": "2026-03-25T16:00:00.000Z"
     },
     {
-      "id": 22,
+      "id": "22",
       "title": "Call mom",
       "description": "Catch up with mom over the phone. Ask about her garden project.",
       "status": "done",
@@ -221,7 +221,7 @@
       "updatedAt": "2026-03-16T19:30:00.000Z"
     },
     {
-      "id": 23,
+      "id": "23",
       "title": "Refactor database queries",
       "description": "Optimize slow N+1 queries in the user dashboard module.",
       "status": "done",
@@ -231,7 +231,7 @@
       "updatedAt": "2026-03-05T11:45:00.000Z"
     },
     {
-      "id": 24,
+      "id": "24",
       "title": "Try new yoga class",
       "description": "Attend the beginner vinyasa class at the community center on Wednesday.",
       "status": "pending",
@@ -241,7 +241,7 @@
       "updatedAt": "2026-03-24T12:00:00.000Z"
     },
     {
-      "id": 25,
+      "id": "25",
       "title": "Watch Kubernetes tutorial series",
       "description": "Complete the remaining 4 episodes on pod networking and service mesh.",
       "status": "pending",
@@ -251,7 +251,7 @@
       "updatedAt": "2026-03-20T20:00:00.000Z"
     },
     {
-      "id": 26,
+      "id": "26",
       "title": "Order new running shoes",
       "description": "Current pair has over 500 miles. Order the same model in size 10.",
       "status": "done",
@@ -261,7 +261,7 @@
       "updatedAt": "2026-03-08T10:00:00.000Z"
     },
     {
-      "id": 27,
+      "id": "27",
       "title": "Set up CI/CD pipeline",
       "description": "Configure GitHub Actions for automated testing and deployment on merge.",
       "status": "done",
@@ -271,7 +271,7 @@
       "updatedAt": "2026-03-04T17:00:00.000Z"
     },
     {
-      "id": 28,
+      "id": "28",
       "title": "Clean out garage",
       "description": "Sort through boxes, donate unused items, and organize tools on the pegboard.",
       "status": "pending",
@@ -281,7 +281,7 @@
       "updatedAt": "2026-03-17T09:00:00.000Z"
     },
     {
-      "id": 29,
+      "id": "29",
       "title": "Prepare for technical interview",
       "description": "Practice system design questions and review common algorithm patterns.",
       "status": "in-progress",
@@ -291,7 +291,7 @@
       "updatedAt": "2026-03-26T22:00:00.000Z"
     },
     {
-      "id": 30,
+      "id": "30",
       "title": "Get flu shot",
       "description": "Walk-in clinic at the pharmacy is available on weekdays until 6pm.",
       "status": "done",
@@ -301,7 +301,7 @@
       "updatedAt": "2026-02-27T15:00:00.000Z"
     },
     {
-      "id": 31,
+      "id": "31",
       "title": "Design new landing page mockup",
       "description": "Create Figma mockups for the product redesign with updated brand colors.",
       "status": "in-progress",
@@ -311,7 +311,7 @@
       "updatedAt": "2026-03-24T15:00:00.000Z"
     },
     {
-      "id": 32,
+      "id": "32",
       "title": "Return library books",
       "description": "Three books are due this Friday. Drop them off on the way to work.",
       "status": "pending",
@@ -321,7 +321,7 @@
       "updatedAt": "2026-03-25T07:30:00.000Z"
     },
     {
-      "id": 33,
+      "id": "33",
       "title": "Buy new monitor cable",
       "description": "Need a USB-C to DisplayPort cable for the secondary monitor.",
       "status": "done",
@@ -331,7 +331,7 @@
       "updatedAt": "2026-03-12T10:00:00.000Z"
     },
     {
-      "id": 34,
+      "id": "34",
       "title": "Start meditation habit",
       "description": "Use the Headspace app for 10 minutes every morning for 30 days.",
       "status": "in-progress",
@@ -341,7 +341,7 @@
       "updatedAt": "2026-03-27T06:45:00.000Z"
     },
     {
-      "id": 35,
+      "id": "35",
       "title": "Build a CLI tool in Go",
       "description": "Create a small command-line file organizer as a weekend learning project.",
       "status": "pending",
@@ -351,7 +351,7 @@
       "updatedAt": "2026-03-23T21:00:00.000Z"
     },
     {
-      "id": 36,
+      "id": "36",
       "title": "Onboard new team member",
       "description": "Walk Alex through the codebase, dev environment setup, and team processes.",
       "status": "done",
@@ -361,7 +361,7 @@
       "updatedAt": "2026-03-12T17:00:00.000Z"
     },
     {
-      "id": 37,
+      "id": "37",
       "title": "Fix leaky bathroom faucet",
       "description": "Replace the washer in the bathroom sink faucet to stop the drip.",
       "status": "done",
@@ -371,7 +371,7 @@
       "updatedAt": "2026-03-05T14:00:00.000Z"
     },
     {
-      "id": 38,
+      "id": "38",
       "title": "Restock vitamins and supplements",
       "description": "Order vitamin D, omega-3, and magnesium from the usual online store.",
       "status": "pending",
@@ -381,17 +381,17 @@
       "updatedAt": "2026-03-21T09:00:00.000Z"
     },
     {
-      "id": 39,
+      "id": "39",
       "title": "Stretch and foam roll session",
       "description": "Do a 20-minute recovery routine focusing on hamstrings and lower back.",
       "status": "pending",
       "priority": "low",
       "categoryId": 4,
       "createdAt": "2026-03-27T17:00:00.000Z",
-      "updatedAt": "2026-03-27T17:00:00.000Z"
+      "updatedAt": "2026-03-28T03:17:08.428Z"
     },
     {
-      "id": 40,
+      "id": "40",
       "title": "Study PostgreSQL window functions",
       "description": "Work through exercises on ROW_NUMBER, RANK, and LAG/LEAD functions.",
       "status": "done",
@@ -401,7 +401,7 @@
       "updatedAt": "2026-03-13T20:30:00.000Z"
     },
     {
-      "id": 41,
+      "id": "41",
       "title": "Create sprint retrospective document",
       "description": "Summarize what went well, what didn't, and action items from sprint 14.",
       "status": "done",
@@ -411,7 +411,7 @@
       "updatedAt": "2026-03-13T16:30:00.000Z"
     },
     {
-      "id": 42,
+      "id": "42",
       "title": "Water indoor plants",
       "description": "Check soil moisture and water the fiddle leaf fig, pothos, and succulents.",
       "status": "pending",
@@ -421,7 +421,7 @@
       "updatedAt": "2026-03-26T07:00:00.000Z"
     },
     {
-      "id": 43,
+      "id": "43",
       "title": "Compare car insurance quotes",
       "description": "Policy renews in April. Get quotes from at least 3 providers.",
       "status": "in-progress",
@@ -431,7 +431,7 @@
       "updatedAt": "2026-03-25T11:00:00.000Z"
     },
     {
-      "id": 44,
+      "id": "44",
       "title": "Buy new backpack for travel",
       "description": "Need a 40L carry-on backpack for the upcoming Europe trip in May.",
       "status": "pending",
@@ -441,7 +441,7 @@
       "updatedAt": "2026-03-16T12:00:00.000Z"
     },
     {
-      "id": 45,
+      "id": "45",
       "title": "Book eye exam",
       "description": "Prescription is over a year old. Schedule an appointment with the optometrist.",
       "status": "pending",
@@ -451,7 +451,7 @@
       "updatedAt": "2026-03-14T08:30:00.000Z"
     },
     {
-      "id": 46,
+      "id": "46",
       "title": "Contribute to open source project",
       "description": "Pick up a good-first-issue on the Vite repository and submit a PR.",
       "status": "pending",
@@ -461,7 +461,7 @@
       "updatedAt": "2026-03-25T20:00:00.000Z"
     },
     {
-      "id": 47,
+      "id": "47",
       "title": "Migrate database to new cluster",
       "description": "Plan and execute the PostgreSQL migration to the upgraded RDS instance.",
       "status": "in-progress",
@@ -471,7 +471,7 @@
       "updatedAt": "2026-03-27T09:00:00.000Z"
     },
     {
-      "id": 48,
+      "id": "48",
       "title": "Batch cook freezer meals",
       "description": "Prepare soups and casseroles for the freezer to save time on busy weeknights.",
       "status": "pending",
@@ -481,7 +481,7 @@
       "updatedAt": "2026-03-22T16:00:00.000Z"
     },
     {
-      "id": 49,
+      "id": "49",
       "title": "Order replacement water filter",
       "description": "The fridge water filter indicator is red. Order the compatible replacement.",
       "status": "pending",
@@ -491,7 +491,7 @@
       "updatedAt": "2026-03-26T14:00:00.000Z"
     },
     {
-      "id": 50,
+      "id": "50",
       "title": "Track daily water intake",
       "description": "Use the hydration app to log at least 8 glasses of water per day this week.",
       "status": "in-progress",
@@ -502,10 +502,31 @@
     }
   ],
   "categories": [
-    { "id": 1, "name": "Work", "color": "#3B82F6" },
-    { "id": 2, "name": "Personal", "color": "#10B981" },
-    { "id": 3, "name": "Shopping", "color": "#F59E0B" },
-    { "id": 4, "name": "Health", "color": "#EF4444" },
-    { "id": 5, "name": "Learning", "color": "#8B5CF6" }
-  ]
+    {
+      "id": "1",
+      "name": "Work",
+      "color": "#3B82F6"
+    },
+    {
+      "id": "2",
+      "name": "Personal",
+      "color": "#10B981"
+    },
+    {
+      "id": "3",
+      "name": "Shopping",
+      "color": "#F59E0B"
+    },
+    {
+      "id": "4",
+      "name": "Health",
+      "color": "#EF4444"
+    },
+    {
+      "id": "5",
+      "name": "Learning",
+      "color": "#8B5CF6"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
